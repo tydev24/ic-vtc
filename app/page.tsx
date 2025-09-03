@@ -52,7 +52,7 @@ export default function HomePage() {
             Votre service de VTC de confiance à Rennes et ses alentours
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg" className="bg-transparent border border-[#C79C3E] text-[#C79C3E] hover:bg-[#C79C3E]/10">
               <Link href="/booking">Réserver un trajet</Link>
             </Button>
             <Button

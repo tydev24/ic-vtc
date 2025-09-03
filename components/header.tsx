@@ -18,19 +18,19 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-background border-b border-border sticky top-0 z-50">
+    <header className="bg-black border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center" aria-label="IC VTC35 - Accueil">
             <div className="flex items-center gap-3">
               <div className="flex flex-col items-start leading-none">
-                <span className="text-accent font-extrabold text-2xl md:text-3xl tracking-tight font-playfair">IC</span>
-                <span className="mt-1 block w-8 h-0.5 bg-accent rounded-sm" aria-hidden="true" />
+                <span className="font-extrabold text-2xl md:text-3xl tracking-tight font-playfair" style={{ color: '#C79C3E' }}>IC</span>
+                <span className="mt-1 block w-8 h-0.5 rounded-sm" style={{ backgroundColor: '#C79C3E' }} aria-hidden="true" />
               </div>
 
               <div className="flex flex-col">
-                <span className="text-foreground font-semibold text-sm md:text-base tracking-wider uppercase">VTC35</span>
+                <span className="font-semibold text-sm md:text-base tracking-wider uppercase text-white">VTC35</span>
               </div>
             </div>
           </Link>
@@ -41,7 +41,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-200 font-medium"
+                className="text-[#C79C3E] hover:text-[#C79C3E]/90 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
@@ -52,12 +52,12 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:0652767892"
-              className="flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors"
+              className="flex items-center space-x-2 text-[#C79C3E] hover:text-[#C79C3E]/90 transition-colors"
             >
-              <Phone className="h-4 w-4" />
+              <Phone className="h-4 w-4" style={{ color: '#C79C3E' }} />
               <span className="font-medium">06.52.76.78.92</span>
             </a>
-            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button asChild className="bg-transparent border border-[#C79C3E] text-[#C79C3E] hover:bg-[#C79C3E]/10">
               <Link href="/booking">Réserver</Link>
             </Button>
           </div>
@@ -65,9 +65,10 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-foreground hover:text-accent"
+            className="md:hidden p-2 rounded-md text-[#C79C3E] hover:text-[#C79C3E]/90"
+            aria-label="Menu"
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? <X className="h-6 w-6" style={{ color: '#C79C3E' }} /> : <Menu className="h-6 w-6" style={{ color: '#C79C3E' }} />}
           </button>
         </div>
 
@@ -79,7 +80,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-accent transition-colors duration-200 font-medium px-2 py-1"
+                  className="text-[#C79C3E] hover:text-[#C79C3E]/90 transition-colors duration-200 font-medium px-2 py-1"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -88,12 +89,12 @@ export default function Header() {
               <div className="flex flex-col space-y-3 pt-4 border-t border-border">
                 <a
                   href="tel:0652767892"
-                  className="flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors px-2"
+                  className="flex items-center space-x-2 text-[#C79C3E] hover:text-[#C79C3E]/90 transition-colors px-2"
                 >
-                  <Phone className="h-4 w-4" />
+                  <Phone className="h-4 w-4" style={{ color: '#C79C3E' }} />
                   <span className="font-medium">06.52.76.78.92</span>
                 </a>
-                <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 mx-2">
+                <Button asChild className="bg-transparent border border-[#C79C3E] text-[#C79C3E] hover:bg-[#C79C3E]/10 mx-2">
                   <Link href="/booking">Réserver</Link>
                 </Button>
               </div>

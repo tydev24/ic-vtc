@@ -23,7 +23,7 @@ export default function AboutPage() {
     {
       icon: MapPin,
       title: "Disponibilité 7j/7",
-      description: "Service disponible tous les jours sur Rennes et sa région",
+      description: "Service disponible tous les jours sur Rennes et alentours",
     },
     {
       icon: Smartphone,
@@ -63,13 +63,13 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Basés sur Rennes, nous proposons des trajets confortables, ponctuels et sécurisés pour tous vos
+              Basés à Rennes, nous proposons des trajets confortables, ponctuels et sécurisés pour tous vos
               déplacements : transferts vers les gares et aéroports, rendez-vous professionnels, soirées, événements, ou
               encore trajets longue distance.
             </p>
 
             <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              Notre priorité ? Vous offrir une expérience de transport haut de gamme, avec un service irréprochable.
+              Notre priorité ? Vous offrir une expérience de transport haut de gamme, avec un service irréprochable à Rennes et alentours.
             </p>
           </div>
         </div>

@@ -251,7 +251,7 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6 text-accent mt-1" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Zone de service</h3>
-                      <p className="text-muted-foreground">Rennes et sa région</p>
+                        <p className="text-muted-foreground">Rennes et alentours</p>
                       <p className="text-sm text-muted-foreground mt-1">Trajets longue distance sur devis</p>
                     </div>
                   </div>
